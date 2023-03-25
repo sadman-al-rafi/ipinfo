@@ -1,6 +1,3 @@
-function getip(){
-    
-
 var printl=document.querySelector("#printl")
      fetch('https://api.ipify.org/?format=json')
         .then(res => res.json())
@@ -13,7 +10,7 @@ var printl=document.querySelector("#printl")
             printl.innerHTML=`Your ip is: <a style="text-decoration:none;color:White;" href="#">${ipval}</a>`
 
         })
-        }
+        
         
         function getloc() {
         var locprint=document.querySelector("#locprint")
